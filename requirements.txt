@@ -1,0 +1,7 @@
+python-dotenv
+requests
+pydantic
+replicate
+openai
+kokoro>=0.3.1
+soundfile
