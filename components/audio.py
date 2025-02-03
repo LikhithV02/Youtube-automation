@@ -7,8 +7,9 @@ import os
 pipeline = KPipeline(lang_code='a')
 
 def generate_audio(prompt: str, output_path: str):
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_path, exist_ok=True)
+     # Create the output directory if it doesn't exist
+    output_dir = Path(output_path).parent
+    os.makedirs(output_dir, exist_ok=True)
     
     generator = pipeline(
         prompt, voice='af_heart', speed=1, split_pattern=r'\n+'
@@ -27,7 +28,7 @@ def generate_audio(prompt: str, output_path: str):
     # Combine all audio segments into one file
     if all_audio:
         combined_audio = np.concatenate(all_audio)
-        combined_path = Path(output_path) / "combined_output.wav"
+        combined_path = Path(output_path)
         sf.write(str(combined_path), combined_audio, 24000)
 
 if __name__ == '__main__':
