@@ -255,7 +255,7 @@ def create_video_with_retry(topic: str, retries: int = 5, backoff_factor: float 
 
 if __name__ == "__main__":
     try:
-        topic = "Iron-Man story"
+        topic = "Wonder women story"
         video_info = create_video_with_retry(topic=topic)
         logger.info(f"Successfully created video: {video_info.file_path}")
     except Exception as e:

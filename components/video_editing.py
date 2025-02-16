@@ -122,7 +122,7 @@ def choose_bg_music(music_folder: str, required_duration: float):
     
     # Trim to exact duration needed
     bg_music = bg_music.subclip(0, required_duration)
-    bg_music = bg_music.volumex(0.5)
+    bg_music = bg_music.volumex(0.2)
     
     return bg_music
 
