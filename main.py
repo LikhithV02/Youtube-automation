@@ -424,7 +424,7 @@ def create_video_with_resume(topic: str, retries: int = 5, backoff_factor: float
 
 if __name__ == "__main__":
     try:
-        topic = "Wonder women story"
+        topic = "Spiderman origin"
         video_info = create_video_with_resume(topic=topic)
         logger.info(f"Successfully created video: {video_info.file_path}")
     except Exception as e:

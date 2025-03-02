@@ -194,7 +194,7 @@ def create_advanced_video(scenes: List[Scene], output_path: str, fps: int = 24):
         final_clip = final_video.set_audio(final_audio)
         
         # Write output video
-        final_clip.write_videofile(output_path, fps=fps)
+        final_clip.write_videofile(output_path, fps=fps, codec="h264_nvenc")
         
         # Clean up
         final_clip.close()

@@ -108,53 +108,31 @@ class ProjectStateManager:
 
 
 def find_existing_project(base_dir: Union[str, Path], topic: str) -> Optional[Path]:
-    """
-    Find an existing project directory with the same topic name.
-    
-    Args:
-        base_dir: Base directory to search in
-        topic: Topic name to search for
-        
-    Returns:
-        Path to existing project directory or None if not found
-    """
     base_path = Path(base_dir)
     if not base_path.exists():
         return None
     
-    # Format topic for comparison
+    # Format topic for comparison (case-insensitive)
     formatted_topic = topic.replace(' ', '_').lower()
     
-    # First, try to find an exact match (without timestamp)
-    exact_path = base_path / formatted_topic
-    if exact_path.exists() and exact_path.is_dir():
-        logger.info(f"Found exact topic match: {exact_path}")
-        return exact_path
-    
-    # For backward compatibility, check timestamped directories
     # List all directories in the base directory
     for dir_path in base_path.iterdir():
         if dir_path.is_dir():
-            # Check if the directory name is the exact topic
-            if dir_path.name == formatted_topic:
-                logger.info(f"Found exact topic match: {dir_path}")
+            dir_name = dir_path.name.lower()  # Convert to lowercase for comparison
+            
+            # Check for exact match or timestamped match (case-insensitive)
+            if dir_name == formatted_topic or dir_name.endswith(f"_{formatted_topic}"):
+                logger.info(f"Found topic match: {dir_path}")
                 return dir_path
-                
-            # Check if it's a timestamped directory with our topic
-            dir_name = dir_path.name
+            
+            # Check if it's a timestamped directory
             if '_' in dir_name:
-                # Extract the timestamp part (before the topic)
                 parts = dir_name.split('_')
-                if len(parts) >= 3:  # At least YYYYMMDD_HHMMSS_Topic
-                    # Check if the first part looks like a timestamp (8 digits)
-                    if parts[0].isdigit() and len(parts[0]) == 8:
-                        # Extract everything after the timestamp_timestamp_ prefix
-                        dir_topic = '_'.join(parts[2:])
-                        
-                        # Check if topic matches
-                        if dir_topic == formatted_topic:
-                            logger.info(f"Found timestamped topic match: {dir_path}")
-                            return dir_path
+                if len(parts) >= 3 and parts[0].isdigit() and len(parts[0]) == 8:
+                    dir_topic = '_'.join(parts[2:]).lower()
+                    if dir_topic == formatted_topic:
+                        logger.info(f"Found timestamped topic match: {dir_path}")
+                        return dir_path
     
     return None
 
