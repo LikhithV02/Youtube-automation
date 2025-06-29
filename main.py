@@ -11,7 +11,7 @@ from pathlib import Path
 from components.web_research_agent import web_search_agent
 from components.llm_structured_output import generate_structured_output
 from components.image_replicate import generate_image
-from components.audio import generate_audio
+from components.audio_elevenlabs import generate_audio
 from constants import scenes_template, video_metadata_template, image_prompt_template
 from entity import Scenes, VideoMetadata, ImagePrompt, VideoInfo, Scene
 from components.project_manager import ProjectManager

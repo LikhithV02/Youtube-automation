@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 from entity import Scene
 
-def create_subtitle_clip(scene : Scene, frame_width, frame_height, font_size=64, font_path=r"E:\Projects\Youtube-automation\fonts\Bangers-Regular.ttf"):
+def create_subtitle_clip(scene : Scene, frame_width, frame_height, font_size=64, font_path=r"fonts/Bangers-Regular.ttf"):
     words = scene.narration.split()
     word_positions = calculate_word_positions(words, font_size, font_path, frame_width, frame_height, position='center')
     animation_speed = scene.duration / len(words)
