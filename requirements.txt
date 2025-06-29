@@ -7,4 +7,7 @@ kokoro>=0.3.1
 soundfile
 langgraph
 langchain-groq
+langchain-google-generative-ai
+langsmith
+langchain-openai
 moviepy==1.0.3

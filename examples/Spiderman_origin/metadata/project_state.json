@@ -1,0 +1,119 @@
+{
+  "topic": "Spiderman origin",
+  "storyline": "Peter Parker, a high school student, is bitten by a radioactive spider and acquires spider-like abilities. He initially uses these powers for personal gain, but after his Uncle Ben is killed by a thief he could have stopped, he decides to use his powers to fight crime as Spider-Man, learning that \"with great power comes great responsibility.\"",
+  "video_metadata": {
+    "title": "Awakening the Web-Warrior: Spider-Man's Rise to Responsibility",
+    "description": "Step into the iconic transformation of Peter Parker, an ordinary high schooler catapulted into heroism after a fateful spider bite bestows him with extraordinary abilities. Witness his journey from seeking personal gain to embracing the essence of heroism after a personal tragedy reshapes his path. This electrifying origin story illustrates the timeless lesson: \"With great power comes great responsibility.\" Dive into Peter's evolution to Spider-Man, defender against the shadows of crime and guardian of New York.",
+    "keywords": [
+      "Spider-Man origin",
+      "Peter Parker transformation",
+      "hero's journey",
+      "great power comes great responsibility",
+      "radioactive spider bite",
+      "crime-fighting hero",
+      "superhero beginnings",
+      "Uncle Ben",
+      "Spider-Man powers",
+      "comic book story"
+    ]
+  },
+  "scenes": [
+    {
+      "scene": "Introduction: Setting the Stage",
+      "narration": "Get ready to swing into the thrilling origin story of one of Marvel's most iconic heroes\u2014Spider-Man!"
+    },
+    {
+      "scene": "Scene 1: The Bite",
+      "narration": "Meet Peter Parker, an ordinary high school student whose life changes forever after a bite from a radioactive spider."
+    },
+    {
+      "scene": "Scene 2: Discovery of Powers",
+      "narration": "Witness Peter's awe and confusion as he grapples with newfound powers, from climbing walls to superhuman agility."
+    },
+    {
+      "scene": "Scene 3: A Lesson in Responsibility",
+      "narration": "Tragedy strikes as Uncle Ben is killed, prompting Peter to recognize the true weight of his great power."
+    },
+    {
+      "scene": "Scene 4: The Birth of Spider-Man",
+      "narration": "Driven by guilt and a newfound sense of duty, Peter dons the mask, becoming the heroic Spider-Man."
+    },
+    {
+      "scene": "Conclusion: The Hero's Journey",
+      "narration": "Peter learns that heroism isn't just about power but the responsibility to protect others."
+    },
+    {
+      "scene": "Outro: Join the Web-slinger",
+      "narration": "Thanks for watching! Subscribe for more thrilling superhero origins and become a part of our heroic community."
+    }
+  ],
+  "image_prompts": [
+    "Low-angle shot capturing the sprawling cityscape enveloped in a warm golden hour glow, evoking a sense of ambition and opportunity. Use of soft-focus foreground elements and a gradual depth of field transition adds layers, referencing the opening of 'La La Land' where the city's energy and dreams beckon.",
+    "High-angle shot of a dimly lit, narrow alley at night, drenched in cold blue tones, capturing the lurking danger and tension. Layered composition with shadowy figures subtly highlighted by a flickering street lamp references the noir style of 'Blade Runner', building a sense of foreboding and intrigue.",
+    "Overhead dolly shot of a young woman's silhouette lit by warm, radiant sunlight breaking through tree leaves, casting dynamic patterns on her mystified expression. The atmosphere is an awe-inspiring blend of discovery and wonder, with a subtle nod to Spielbergian magic realism that underscores the internal awakening of newfound abilities.",
+    "Scene 3: A striking low-angle shot captures the protagonist framed by towering city buildings, enveloped in a contrast of deep shadows and ethereal spotlights that highlight their contemplative face. The mood is a tense balance between realization and duty, drawing inspiration from Nolan's stark urban landscapes that pivot on the weight of personal responsibility.",
+    "Scene 4: A sweeping dolly shot immerses the viewer in a dimly lit laboratory, where Spider-Man's silhouette emerges dramatically against the vibrant glow of neon-tinted chemical vials. The mood is a transformative genesis, layered with an undercurrent of awe and anticipation, echoing Sam Raimi's iconic blend of kinetic energy and emotional gravity in hero epiphany moments.",
+    "**Scene: Conclusion: The Hero's Journey** - A wide shot frames our hero standing on a precipice, overlooking a sprawling cityscape dyed in the golden hues of dusk, symbolizing new beginnings. The mood is a reflective culmination, basking in achievement and contemplative peace, drawing inspiration from Terrence Malick's use of natural light and serene landscapes to evoke introspective moments in \"The Tree of Life.\"",
+    "**Scene: Outro: Join the Web-slinger** - A dynamic overhead shot reveals our hero perched atop a skyscraper, silhouetted against the vibrant, pulsating lights of the city below, embodying energy and potential. The atmosphere teems with kinetic anticipation and urban allure, reminiscent of the frenetic cityscapes captured in Paul Thomas Anderson's \"Magnolia,\" accentuating the web-slinger's blend of street-level grit and high-flying excitement."
+  ],
+  "processed_scenes": [
+    {
+      "description": "Introduction: Setting the Stage",
+      "image_path": "projects/20250629_190023_Spiderman_origin/images/scene_1.jpg",
+      "narration": "Get ready to swing into the thrilling origin story of one of Marvel's most iconic heroes\u2014Spider-Man!",
+      "audio_path": "projects/20250629_190023_Spiderman_origin/audio/narration_1.mp3",
+      "start_time": 0.0,
+      "duration": 6.0
+    },
+    {
+      "description": "Scene 1: The Bite",
+      "image_path": "projects/20250629_190023_Spiderman_origin/images/scene_2.jpg",
+      "narration": "Meet Peter Parker, an ordinary high school student whose life changes forever after a bite from a radioactive spider.",
+      "audio_path": "projects/20250629_190023_Spiderman_origin/audio/narration_2.mp3",
+      "start_time": 6.0,
+      "duration": 7.0
+    },
+    {
+      "description": "Scene 2: Discovery of Powers",
+      "image_path": "projects/20250629_190023_Spiderman_origin/images/scene_3.jpg",
+      "narration": "Witness Peter's awe and confusion as he grapples with newfound powers, from climbing walls to superhuman agility.",
+      "audio_path": "projects/20250629_190023_Spiderman_origin/audio/narration_3.mp3",
+      "start_time": 13.0,
+      "duration": 7.0
+    },
+    {
+      "description": "Scene 3: A Lesson in Responsibility",
+      "image_path": "projects/20250629_190023_Spiderman_origin/images/scene_4.jpg",
+      "narration": "Tragedy strikes as Uncle Ben is killed, prompting Peter to recognize the true weight of his great power.",
+      "audio_path": "projects/20250629_190023_Spiderman_origin/audio/narration_4.mp3",
+      "start_time": 20.0,
+      "duration": 6.0
+    },
+    {
+      "description": "Scene 4: The Birth of Spider-Man",
+      "image_path": "projects/20250629_190023_Spiderman_origin/images/scene_5.jpg",
+      "narration": "Driven by guilt and a newfound sense of duty, Peter dons the mask, becoming the heroic Spider-Man.",
+      "audio_path": "projects/20250629_190023_Spiderman_origin/audio/narration_5.mp3",
+      "start_time": 26.0,
+      "duration": 6.0
+    },
+    {
+      "description": "Conclusion: The Hero's Journey",
+      "image_path": "projects/20250629_190023_Spiderman_origin/images/scene_6.jpg",
+      "narration": "Peter learns that heroism isn't just about power but the responsibility to protect others.",
+      "audio_path": "projects/20250629_190023_Spiderman_origin/audio/narration_6.mp3",
+      "start_time": 32.0,
+      "duration": 5.0
+    },
+    {
+      "description": "Outro: Join the Web-slinger",
+      "image_path": "projects/20250629_190023_Spiderman_origin/images/scene_7.jpg",
+      "narration": "Thanks for watching! Subscribe for more thrilling superhero origins and become a part of our heroic community.",
+      "audio_path": "projects/20250629_190023_Spiderman_origin/audio/narration_7.mp3",
+      "start_time": 37.0,
+      "duration": 6.0
+    }
+  ],
+  "status": "complete",
+  "last_updated": "2025-06-29 20:23:51.946497"
+}

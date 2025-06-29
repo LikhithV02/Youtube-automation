@@ -3,6 +3,7 @@ from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_groq import ChatGroq
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import OpenAI
 from langchain_core.tools import tool
 from langchain_community.tools import TavilySearchResults
 
@@ -36,6 +37,8 @@ def web_search_agent(query: str):
         model = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.2)
     elif "GOOGLE_API_KEY" in os.environ and os.environ["GOOGLE_API_KEY"]:
         model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
+    elif "OPENAI_API_KEY" in os.environ and os.environ["OPENAI_API_KEY"]:
+        model = OpenAI(model="gpt-4o-mini", temperature=0.2)
     else:
         raise ValueError("No valid API key found for GROQ or GOOGLE.")
 
